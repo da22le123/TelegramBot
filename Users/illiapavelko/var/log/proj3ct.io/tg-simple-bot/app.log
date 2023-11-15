@@ -1,0 +1,932 @@
+2023-11-06 20:01:12,032 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 4113 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-06 20:01:12,033 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-06 20:01:12,480 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.558 seconds (process running for 0.789)
+2023-11-06 21:05:04,424 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-07 02:15:13,398 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-07 05:35:45,543 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-07 08:54:32,631 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-07 09:37:58,327 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-07 17:57:40,371 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 6480 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-07 17:57:40,372 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-07 17:57:41,090 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.829 seconds (process running for 1.121)
+2023-11-07 18:00:22,569 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-07 18:43:02,863 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-07 19:15:02,391 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-07 19:17:31,184 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-07 19:17:36,269 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 6676 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-07 19:17:36,270 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-07 19:17:36,674 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.513 seconds (process running for 0.747)
+2023-11-07 19:17:38,690 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-07 19:30:22,214 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.myBot.myBot.MyBotApplicationTests]: MyBotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-07 19:30:22,254 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.myBot.myBot.MyBotApplication for test class com.myBot.myBot.MyBotApplicationTests
+2023-11-07 19:30:22,378 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/illiapavelko/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/Users/illiapavelko/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-11-07 19:30:22,382 INFO c.m.m.MyBotApplicationTests [main] Starting MyBotApplicationTests using Java 17.0.8.1 with PID 10221 (started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-07 19:30:22,383 INFO c.m.m.MyBotApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-07 19:30:22,864 INFO c.m.m.MyBotApplicationTests [main] Started MyBotApplicationTests in 0.559 seconds (process running for 1.018)
+2023-11-07 19:33:06,633 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.myBot.myBot.MyBotApplicationTests]: MyBotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-07 19:33:06,663 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.myBot.myBot.MyBotApplication for test class com.myBot.myBot.MyBotApplicationTests
+2023-11-07 19:33:06,827 WARN o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/illiapavelko/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/Users/illiapavelko/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-11-07 19:33:06,836 INFO c.m.m.MyBotApplicationTests [main] Starting MyBotApplicationTests using Java 17.0.8.1 with PID 10253 (started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-07 19:33:06,836 INFO c.m.m.MyBotApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-07 19:33:07,279 INFO c.m.m.MyBotApplicationTests [main] Started MyBotApplicationTests in 0.566 seconds (process running for 0.998)
+2023-11-11 15:42:00,070 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18827 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:42:00,072 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:42:00,511 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:42:00,561 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.607 seconds (process running for 0.913)
+2023-11-11 15:42:07,903 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-11 15:42:11,639 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "String.isEmpty()" because "this.chatId" is null
+java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "this.chatId" is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.validate(SendPhoto.java:91)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:211)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:102)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 15:42:16,952 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "String.isEmpty()" because "this.chatId" is null
+java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "this.chatId" is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.validate(SendPhoto.java:91)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:211)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:102)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 15:42:28,069 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18842 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:42:28,070 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:42:28,455 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:42:28,502 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.542 seconds (process running for 0.772)
+2023-11-11 15:42:32,993 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "String.isEmpty()" because "this.chatId" is null
+java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "this.chatId" is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.validate(SendPhoto.java:91)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:211)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:102)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 15:43:26,300 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18848 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:43:26,301 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:43:26,702 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:43:26,746 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.551 seconds (process running for 0.781)
+2023-11-11 15:43:29,091 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "String.isEmpty()" because "this.chatId" is null
+java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "this.chatId" is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.validate(SendPhoto.java:91)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:211)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:102)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 15:45:53,195 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18861 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:45:53,196 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:45:53,669 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:45:53,718 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.628 seconds (process running for 0.859)
+2023-11-11 15:45:56,753 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-11 15:46:04,097 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "String.isEmpty()" because "this.chatId" is null
+java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "this.chatId" is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.validate(SendPhoto.java:91)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:211)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:102)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 15:46:50,009 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18868 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:46:50,010 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:46:50,383 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:46:50,429 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.528 seconds (process running for 0.763)
+2023-11-11 15:46:52,217 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "String.isEmpty()" because "this.chatId" is null
+java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "this.chatId" is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.validate(SendPhoto.java:91)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:211)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:102)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 15:47:19,551 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18873 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:47:19,552 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:47:19,942 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:47:19,986 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.543 seconds (process running for 0.776)
+2023-11-11 15:48:51,263 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18880 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:48:51,264 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:48:51,730 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:48:51,785 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.63 seconds (process running for 0.853)
+2023-11-11 15:48:59,927 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18883 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:48:59,928 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:49:00,302 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:49:00,344 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.524 seconds (process running for 0.763)
+2023-11-11 15:53:22,370 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18909 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:53:22,371 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:53:22,775 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:53:22,825 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.567 seconds (process running for 0.811)
+2023-11-11 15:57:11,024 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18944 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:57:11,025 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:57:11,440 ERROR c.m.m.s.TelegramBot [main] Error setting bot's command list: Error executing org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands query: [400] Bad Request: BOT_COMMAND_INVALID
+2023-11-11 15:57:11,497 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.582 seconds (process running for 0.826)
+2023-11-11 15:59:20,110 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18967 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 15:59:20,111 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 15:59:20,562 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.561 seconds (process running for 0.799)
+2023-11-11 15:59:32,217 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-11 16:01:51,683 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 18989 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 16:01:51,684 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 16:01:52,123 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.547 seconds (process running for 0.775)
+2023-11-11 16:19:29,131 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19056 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 16:19:29,132 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 16:19:29,782 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.765 seconds (process running for 1.009)
+2023-11-11 16:19:48,496 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19062 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 16:19:48,497 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 16:19:48,964 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.585 seconds (process running for 0.817)
+2023-11-11 16:37:03,740 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19137 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 16:37:03,741 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 16:37:04,262 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.628 seconds (process running for 0.934)
+2023-11-11 16:37:11,290 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getText()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getText()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+	at com.myBot.myBot.service.TelegramBot.promptUser(TelegramBot.java:123)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 16:51:39,272 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19218 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 16:51:39,272 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 16:51:39,841 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.682 seconds (process running for 0.924)
+2023-11-11 16:51:49,307 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getText()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getText()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+	at com.myBot.myBot.service.TelegramBot.promptUser(TelegramBot.java:124)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 18:58:06,232 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-11 19:00:43,994 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19432 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 19:00:43,995 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 19:00:44,462 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.579 seconds (process running for 0.816)
+2023-11-11 19:01:13,478 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19437 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 19:01:13,478 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 19:01:13,937 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.565 seconds (process running for 0.796)
+2023-11-11 19:01:30,484 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19442 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 19:01:30,485 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 19:01:30,948 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.569 seconds (process running for 0.8)
+2023-11-11 19:02:44,741 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19448 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 19:02:44,742 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 19:02:45,244 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.607 seconds (process running for 0.839)
+2023-11-11 19:03:44,661 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19452 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 19:03:44,662 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 19:03:45,186 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.63 seconds (process running for 0.863)
+2023-11-11 19:06:44,382 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19472 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 19:06:44,382 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 19:06:44,964 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.692 seconds (process running for 0.967)
+2023-11-11 19:56:27,070 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19665 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 19:56:27,070 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 19:56:27,556 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.595 seconds (process running for 0.834)
+2023-11-11 19:56:49,821 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19675 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 19:56:49,821 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 19:56:50,276 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.556 seconds (process running for 0.776)
+2023-11-11 20:00:50,184 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19696 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 20:00:50,184 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 20:00:50,712 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.638 seconds (process running for 0.881)
+2023-11-11 20:04:45,355 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19724 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 20:04:45,356 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 20:04:45,894 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.643 seconds (process running for 0.881)
+2023-11-11 20:07:12,806 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19741 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 20:07:12,807 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 20:07:13,260 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.563 seconds (process running for 0.836)
+2023-11-11 20:07:30,684 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-11 20:07:31,131 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-11 20:08:16,562 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-11 20:08:16,828 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-11 20:08:39,548 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-11 20:09:12,856 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 19758 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-11 20:09:12,857 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-11 20:09:13,303 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.551 seconds (process running for 0.785)
+2023-11-11 20:09:57,445 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Denys
+2023-11-11 20:12:05,519 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-11 20:12:05,883 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-11 20:14:44,869 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user David
+2023-11-11 20:14:54,341 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:16:14,583 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:17:29,068 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:17:29,779 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-11 20:17:57,549 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:18:19,438 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:18:26,536 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:19:06,282 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getText()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getText()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:19:15,009 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:19:36,971 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Denys
+2023-11-11 20:19:49,541 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-11 20:20:18,230 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Denys
+2023-11-11 20:20:25,046 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 12:27:30,114 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21330 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 12:27:30,116 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 12:27:30,666 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.664 seconds (process running for 0.904)
+2023-11-12 12:27:35,367 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 12:27:35,745 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 12:27:35,746 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Психолог
+2023-11-12 12:27:35,881 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Психолог
+2023-11-12 12:27:36,049 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Ivan Zaporozhets
+2023-11-12 12:27:36,100 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Ivan Zaporozhets
+2023-11-12 12:28:14,513 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 12:28:14,735 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 12:30:09,556 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 12:30:09,972 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 12:33:45,116 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 12:33:45,695 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 12:34:36,718 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21375 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 12:34:36,718 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 12:34:37,180 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.589 seconds (process running for 0.819)
+2023-11-12 12:35:09,631 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21380 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 12:35:09,632 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 12:35:10,141 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.618 seconds (process running for 0.861)
+2023-11-12 12:36:09,603 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 12:36:09,759 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 12:36:42,570 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 12:36:42,729 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 12:36:47,598 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 12:36:47,858 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 12:37:01,104 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 12:37:01,323 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 12:37:26,522 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
+	at com.myBot.myBot.service.TelegramBot.getImageOutJson(TelegramBot.java:164)
+	at com.myBot.myBot.service.TelegramBot.sendImage(TelegramBot.java:134)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 12:44:32,138 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21420 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 12:44:32,138 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 12:44:32,612 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.584 seconds (process running for 0.823)
+2023-11-12 12:44:35,475 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-12 14:09:08,523 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21526 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:09:08,524 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:09:09,186 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.773 seconds (process running for 1.015)
+2023-11-12 14:09:15,769 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:126)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:09:38,431 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:126)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:09:39,276 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:126)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:09:39,748 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:126)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:09:40,137 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:126)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:10:06,054 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21534 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:10:06,054 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:10:06,531 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.582 seconds (process running for 0.811)
+2023-11-12 14:10:07,880 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:125)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:10:20,317 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:125)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:10:48,663 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:125)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:10:54,352 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:125)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:10:56,658 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:125)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:11:18,692 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21548 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:11:18,693 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:11:19,179 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.59 seconds (process running for 0.816)
+2023-11-12 14:11:31,974 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:125)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:12:25,423 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21554 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:12:25,424 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:12:25,968 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.648 seconds (process running for 0.877)
+2023-11-12 14:12:31,059 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Index: -1, Size: 0
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 0
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:756)
+	at java.base/java.util.ArrayList.add(ArrayList.java:481)
+	at com.myBot.myBot.service.TelegramBot.updateReceived(TelegramBot.java:125)
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:13:27,595 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21558 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:13:27,596 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:13:28,042 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.553 seconds (process running for 0.785)
+2023-11-12 14:13:31,839 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-12 14:14:09,570 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 14:14:09,715 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 14:16:23,437 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21570 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:16:23,438 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:16:23,903 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.579 seconds (process running for 0.813)
+2023-11-12 14:25:34,301 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21599 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:25:34,302 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:25:34,745 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.547 seconds (process running for 0.815)
+2023-11-12 14:25:38,809 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:25:57,037 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:26:01,878 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:27:38,897 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21615 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:27:38,897 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:27:39,334 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.543 seconds (process running for 0.771)
+2023-11-12 14:27:47,462 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:27:49,364 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:28:46,322 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21621 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:28:46,323 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:28:46,774 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.556 seconds (process running for 0.782)
+2023-11-12 14:30:51,946 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21635 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:30:51,947 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:30:52,397 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.57 seconds (process running for 0.803)
+2023-11-12 14:32:20,016 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21647 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:32:20,017 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:32:20,529 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.618 seconds (process running for 0.85)
+2023-11-12 14:33:21,849 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21651 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:33:21,850 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:33:22,290 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.547 seconds (process running for 0.785)
+2023-11-12 14:33:29,306 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "com.myBot.myBot.service.TelegramBot.lastUpdate()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "com.myBot.myBot.service.TelegramBot.lastUpdate()" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:34:02,919 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21661 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:34:02,920 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:34:03,445 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.634 seconds (process running for 0.859)
+2023-11-12 14:34:30,163 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21669 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:34:30,164 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:34:30,596 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.537 seconds (process running for 0.77)
+2023-11-12 14:34:42,106 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "com.myBot.myBot.service.TelegramBot.lastUpdate()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "com.myBot.myBot.service.TelegramBot.lastUpdate()" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:36:25,086 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21682 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:36:25,087 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:36:25,555 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.574 seconds (process running for 0.797)
+2023-11-12 14:36:36,788 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "com.myBot.myBot.service.TelegramBot.lastUpdate()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "com.myBot.myBot.service.TelegramBot.lastUpdate()" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:39:35,111 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21706 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:39:35,111 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:39:35,580 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.574 seconds (process running for 0.802)
+2023-11-12 14:39:42,592 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "com.myBot.myBot.service.TelegramBot.lastUpdate()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "com.myBot.myBot.service.TelegramBot.lastUpdate()" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-12 14:40:51,677 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 21713 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 14:40:51,677 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 14:40:52,158 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.587 seconds (process running for 0.814)
+2023-11-12 14:41:00,751 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 14:41:00,884 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 14:48:13,531 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-12 18:47:35,351 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 22235 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-12 18:47:35,352 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-12 18:47:35,825 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.582 seconds (process running for 0.854)
+2023-11-12 18:47:57,352 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Психолог
+2023-11-12 18:48:14,696 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-12 18:51:01,522 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 18:51:02,006 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 18:51:21,052 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 18:51:21,462 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 18:51:36,181 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 18:51:36,378 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-12 18:56:15,980 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-12 18:56:16,217 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-14 16:06:17,025 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 25748 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 16:06:17,026 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 16:06:17,653 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.737 seconds (process running for 1.045)
+2023-11-14 16:07:57,308 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 25781 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 16:07:57,309 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 16:07:57,949 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.748 seconds (process running for 0.977)
+2023-11-14 16:23:51,523 ERROR c.m.m.s.TelegramBot [PornShell Telegram Executor] Error occurred: Error executing org.telegram.telegrambots.meta.api.methods.menubutton.SetChatMenuButton query: [400] Bad Request: can't parse menu button: Field "type" must be of type String
+2023-11-14 16:23:51,526 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Диана
+2023-11-14 16:24:01,875 ERROR c.m.m.s.TelegramBot [PornShell Telegram Executor] Error occurred: Error executing org.telegram.telegrambots.meta.api.methods.menubutton.SetChatMenuButton query: [400] Bad Request: can't parse menu button: Field "type" must be of type String
+2023-11-14 16:24:13,120 ERROR c.m.m.s.TelegramBot [PornShell Telegram Executor] Error occurred: Error executing org.telegram.telegrambots.meta.api.methods.menubutton.SetChatMenuButton query: [400] Bad Request: can't parse menu button: Field "type" must be of type String
+2023-11-14 16:24:28,797 ERROR c.m.m.s.TelegramBot [PornShell Telegram Executor] Error occurred: Error executing org.telegram.telegrambots.meta.api.methods.menubutton.SetChatMenuButton query: [400] Bad Request: can't parse menu button: Field "type" must be of type String
+2023-11-14 16:24:31,793 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-14 16:24:32,170 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-14 19:26:52,007 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26460 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 19:26:52,008 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 19:26:52,634 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.752 seconds (process running for 1.029)
+2023-11-14 19:33:01,576 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 19:51:35,075 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26522 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 19:51:35,076 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 19:51:35,604 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.644 seconds (process running for 0.894)
+2023-11-14 19:51:41,877 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 19:55:30,295 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26534 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 19:55:30,296 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 19:55:30,764 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.606 seconds (process running for 0.843)
+2023-11-14 19:55:35,245 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 19:56:38,585 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 19:57:38,952 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26555 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 19:57:38,952 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 19:57:39,463 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.621 seconds (process running for 0.866)
+2023-11-14 19:57:46,327 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 19:57:52,727 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-14 19:57:52,888 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-14 20:05:11,051 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26588 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:05:11,051 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:05:14,353 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 3.419 seconds (process running for 3.731)
+2023-11-14 20:06:21,518 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26598 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:06:21,518 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:06:22,000 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.586 seconds (process running for 0.811)
+2023-11-14 20:06:24,881 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 20:07:20,501 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26611 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:07:20,502 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:07:20,990 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.598 seconds (process running for 0.855)
+2023-11-14 20:07:21,578 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 20:09:51,795 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26620 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:09:51,796 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:09:52,336 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.647 seconds (process running for 0.87)
+2023-11-14 20:09:57,023 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 20:30:43,055 INFO o.t.t.u.DefaultBotSession [PornShell Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-11-14 20:36:58,389 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26853 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:36:58,389 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:36:58,982 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.757 seconds (process running for 1.072)
+2023-11-14 20:37:15,201 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 20:37:18,619 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] first if executed
+2023-11-14 20:38:19,668 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26878 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:38:19,668 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:38:20,259 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.702 seconds (process running for 0.946)
+2023-11-14 20:38:29,073 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 20:38:30,595 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] first if executed
+2023-11-14 20:43:14,687 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26893 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:43:14,688 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:43:15,257 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.682 seconds (process running for 1.041)
+2023-11-14 20:43:18,419 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 20:47:17,063 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26939 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:47:17,063 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:47:17,564 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.611 seconds (process running for 0.847)
+2023-11-14 20:47:24,638 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 20:49:32,072 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 26959 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-14 20:49:32,073 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-14 20:49:32,541 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.571 seconds (process running for 0.797)
+2023-11-14 20:49:36,923 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-14 20:49:39,708 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] second if executed, prompt: cup of tea
+2023-11-14 20:49:41,665 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-14 20:49:41,799 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-14 20:49:50,507 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] second if executed, prompt: cup of coffee
+2023-11-14 20:49:54,050 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-14 20:49:54,152 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
+2023-11-15 08:02:54,738 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 27849 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-15 08:02:54,739 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-15 08:02:55,399 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.783 seconds (process running for 1.106)
+2023-11-15 08:03:32,828 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-15 08:04:41,423 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 27864 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-15 08:04:41,423 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-15 08:04:41,933 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.618 seconds (process running for 0.847)
+2023-11-15 08:04:44,265 ERROR o.t.t.u.DefaultBotSession [PornShell Telegram Executor] Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" because the return value of "java.util.ArrayList.get(int)" is null
+	at com.myBot.myBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2023-11-15 08:05:49,569 INFO c.m.m.MyBotApplication [main] Starting MyBotApplication using Java 17.0.8 with PID 27868 (/Users/illiapavelko/Downloads/myBotShell/target/classes started by illiapavelko in /Users/illiapavelko/Downloads/myBotShell)
+2023-11-15 08:05:49,570 INFO c.m.m.MyBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-15 08:05:50,076 INFO c.m.m.MyBotApplication [main] Started MyBotApplication in 0.607 seconds (process running for 0.846)
+2023-11-15 08:06:01,251 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] Replied to user Илья
+2023-11-15 08:06:11,167 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] image saved
+2023-11-15 08:06:11,311 INFO c.m.m.s.TelegramBot [PornShell Telegram Executor] sendImage method called
