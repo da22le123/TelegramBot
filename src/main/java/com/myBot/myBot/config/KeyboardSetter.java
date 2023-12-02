@@ -29,6 +29,18 @@ public class KeyboardSetter {
 
         return keyboardMarkup;
     }
+    public static ReplyKeyboardMarkup styleMenu() {
+        keyboardRows.clear();
+
+        KeyboardRow row = new KeyboardRow();
+        row.add("Anime style");
+        row.add("Realistic style");
+        keyboardRows.add(row);
+
+        keyboardMarkup.setKeyboard(keyboardRows);
+
+        return keyboardMarkup;
+    }
 
     public static ReplyKeyboardMarkup promptMenu () {
         keyboardRows.clear();
