@@ -8,7 +8,7 @@ import java.util.List;
 
 public class KeyboardSetter {
     static ReplyKeyboardMarkup keyboardMarkup = new ReplyKeyboardMarkup();
-    private static List<KeyboardRow> keyboardRows = new ArrayList<>();
+    private static final List<KeyboardRow> keyboardRows = new ArrayList<>();
 
 
     public static ReplyKeyboardMarkup startMenu () {
@@ -41,20 +41,6 @@ public class KeyboardSetter {
 
         return keyboardMarkup;
     }
-
-    public static ReplyKeyboardMarkup promptMenu () {
-        keyboardRows.clear();
-
-        KeyboardRow row = new KeyboardRow();
-        row.add("of tea");
-        row.add("of coffee");
-        keyboardRows.add(row);
-
-        keyboardMarkup.setKeyboard(keyboardRows);
-
-        return keyboardMarkup;
-    }
-
     public static ReplyKeyboardMarkup ageMenu() {
         keyboardRows.clear();
 
@@ -73,13 +59,12 @@ public class KeyboardSetter {
 
         return keyboardMarkup;
     }
-
     public static ReplyKeyboardMarkup bodyMenu(){
         keyboardRows.clear();
 
         KeyboardRow row = new KeyboardRow();
         row.add("Slim body");
-        row.add("Chubby body");
+        row.add("Chubby / Fat body");
         row.add("Athletic body");
         keyboardRows.add(row);
 
@@ -87,7 +72,6 @@ public class KeyboardSetter {
 
         return keyboardMarkup;
     }
-
     public static ReplyKeyboardMarkup boobsMenu() {
         keyboardRows.clear();
 
@@ -105,25 +89,27 @@ public class KeyboardSetter {
 
         return keyboardMarkup;
     }
-
     public static ReplyKeyboardMarkup hairMenu(){
         keyboardRows.clear();
 
         KeyboardRow row = new KeyboardRow();
         row.add("Blonde hair");
         row.add("Black hair");
+        row.add("Pink hair");
+        row.add("Blue hair");
         keyboardRows.add(row);
 
         row = new KeyboardRow();
         row.add("Red hair");
         row.add("Brown hair");
+        row.add("Green hair");
+        row.add("Gray hair");
         keyboardRows.add(row);
 
         keyboardMarkup.setKeyboard(keyboardRows);
 
         return keyboardMarkup;
     }
-
     public static ReplyKeyboardMarkup placeMenu() {
         keyboardRows.clear();
 
@@ -137,6 +123,44 @@ public class KeyboardSetter {
         row.add("On a couch");
         row.add("On a bike");
         row.add("In a car");
+        keyboardRows.add(row);
+
+        keyboardMarkup.setKeyboard(keyboardRows);
+
+        return keyboardMarkup;
+    }
+    public static ReplyKeyboardMarkup nationalityMenu(){
+        keyboardRows.clear();
+
+        KeyboardRow row = new KeyboardRow();
+        row.add("Asian");
+        row.add("European");
+        row.add("Scandinavian");
+        keyboardRows.add(row);
+
+        row = new KeyboardRow();
+        row.add("Latina");
+        row.add("Black");
+        row.add("Slavic");
+        keyboardRows.add(row);
+
+        keyboardMarkup.setKeyboard(keyboardRows);
+
+        return keyboardMarkup;
+    }
+
+    public static ReplyKeyboardMarkup viewMenu(){
+        keyboardRows.clear();
+
+        KeyboardRow row = new KeyboardRow();
+        row.add("Front view");
+        row.add("Front close up view");
+        row.add("Side view / Profile view");
+        keyboardRows.add(row);
+
+        row = new KeyboardRow();
+        row.add("Ass view");
+        row.add("Ass close up view");
         keyboardRows.add(row);
 
         keyboardMarkup.setKeyboard(keyboardRows);

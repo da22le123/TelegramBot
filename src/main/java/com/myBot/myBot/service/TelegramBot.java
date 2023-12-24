@@ -1,31 +1,19 @@
 package com.myBot.myBot.service;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.myBot.myBot.config.BotConfig;
-import com.myBot.myBot.config.ImageGenerator;
 import com.myBot.myBot.config.KeyboardSetter;
-import com.myBot.myBot.module.UpdateRepository;
-import com.myBot.myBot.module.User;
-import com.myBot.myBot.module.UserRepository;
-import com.myBot.myBot.module.UserUpdate;
+import com.myBot.myBot.module.*;
 import lombok.extern.slf4j.Slf4j;
-import okhttp3.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
-import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.objects.commands.scope.BotCommandScopeDefault;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 
@@ -37,9 +25,11 @@ public final class TelegramBot extends TelegramLongPollingBot {
     private UserRepository userRepository;
     @Autowired
     private UpdateRepository updateRepository;
+    @Autowired
+    private PromptRepository promptRepository;
+    @Autowired
+    private PhotoSaverService photoSaverService;
     final BotConfig config;
-    private String prompt;
-    private String modelId;
 
     private static final String START_TEXT =
             "Hello, you just started the bot!" +
@@ -52,7 +42,7 @@ public final class TelegramBot extends TelegramLongPollingBot {
                     3) Try not to include complicated phrases and make sure your prompt is grammatically correct!""" + "\n" +
                     "List of commands: " + "\n" +
                     "1) /start - receive welcoming message" + "\n" +
-                    "2) /help - get information about bot's usage" + "\n" +
+                    "2) /help - get information about bot`s usage" + "\n" +
                     "3) /settings" + "\n" +
                     "4) /my_data" + "\n" +
                     "5) /photo - start generating a prompt based photo" + "\n";
@@ -69,7 +59,7 @@ public final class TelegramBot extends TelegramLongPollingBot {
         try {
             this.execute(new SetMyCommands(listOfCommands, new BotCommandScopeDefault(), null));
         } catch (TelegramApiException e) {
-            log.error("Error setting bot's command list: " + e.getMessage());
+            log.error("Error setting bot`s command list: " + e.getMessage());
         }
     }
 
@@ -97,9 +87,14 @@ public final class TelegramBot extends TelegramLongPollingBot {
                     registerUser(update.getMessage());
                     sendMessage(chatId, START_TEXT, KeyboardSetter.startMenu());
                 }
-                case "/photo" ->
-                        sendMessage(chatId, "Pick a prompt, let's start with the style of picture. All of the options are displayed in the Screen Keyboard.",
-                                KeyboardSetter.styleMenu());
+                case "/photo" -> {
+                    sendMessage(chatId, "Pick a prompt, let's start with the style of picture. All of the options are displayed in the Screen Keyboard.",
+                        KeyboardSetter.styleMenu());
+                    resetPrompt(chatId);
+                }
+
+
+
                 case "/help" -> sendMessage(chatId, HELP_TEXT, KeyboardSetter.startMenu());
             }
         }
@@ -118,34 +113,124 @@ public final class TelegramBot extends TelegramLongPollingBot {
     //following the flow, user is asked to start generating a prompt anew. After successful prompt build sendMessage
     //method is invoked and a final prompt is given as a parameter.
 
-    private void checkPromptAndGenerate(Long chatId) {
-            if (checkAndSetStyle(chatId)) {
+    private void checkPromptAndGenerate(Long chatId){
+
+
+        if (checkAndSetStyle(chatId)) {
+            if (AnimeStyle(chatId)) {
+                sendMessage(chatId, "Pick the view you want.", KeyboardSetter.viewMenu());
+            } else {
                 sendMessage(chatId, "Okay, now let's pick an age of a girl you'd like to generate.", KeyboardSetter.ageMenu());
             }
-            if (checkAndSetAgePrompt(chatId)) {
-                sendMessage(chatId, "Okay, now let's pick a type of body.", KeyboardSetter.bodyMenu());
-            }
-            if (checkAndSetBodyPrompt(chatId)){
-                sendMessage(chatId, "It's time to decide what kind of boobs should she have.", KeyboardSetter.boobsMenu());
-            }
-            if (checkAndSetBreastPrompt(chatId)) {
-                sendMessage(chatId, "What color should the hair be?", KeyboardSetter.hairMenu());
+        }
 
-                try {
-                    sendImage(chatId, prompt, modelId);
-                } catch (IOException e) {
-                    log.error("Error occurred when calling sendImage method: " + e.getMessage());
+        if (AnimeStyle(chatId)){
+            if (checkAndSetViewPrompt(chatId)) {
+                if (frontOrSideView(chatId)) {
+                    sendMessage(chatId, "Let's choose the breast size then.", KeyboardSetter.boobsMenu());
+                } else {
+//                    String lastPrompt = prompt;
+//                    String newPrompt = ;
+//                    prompt = lastPrompt + newPrompt;
+                    promptUpdate(chatId, " big ass, best ass, detailed asshole, detailed vagina ");
+                    sendFinalPhoto(chatId);
                 }
             }
+        } else {
+            if (checkAndSetAgePrompt(chatId)) {
+                sendMessage(chatId, "Pick the view you want.", KeyboardSetter.viewMenu());
+            }
+        }
+
+        if (AnimeStyle(chatId)) {
+            if (frontOrSideView(chatId)) {
+                if (checkAndSetBreastPromptAfterView(chatId)) {
+                    sendMessage(chatId, "What color should the hair be?", KeyboardSetter.hairMenu());
+                }
+            }
+        } else {
+            if (checkAndSetViewPromptAfterAge(chatId)) {
+                if (frontOrSideView(chatId)) {
+                    sendMessage(chatId, "Pick the nationality of the girl", KeyboardSetter.nationalityMenu());
+                } else {
+                    promptUpdate(chatId, " big ass, best ass, detailed asshole, detailed vagina ");
+                    sendMessage(chatId, "Pick the type of body you want", KeyboardSetter.bodyMenu());
+                }
+            }
+        }
+
+        if (AnimeStyle(chatId)) {
+            if (frontOrSideView(chatId)) {
+                if (checkAndSetHairPromptAfterBreast(chatId)) {
+                    sendFinalPhoto(chatId);
+                }
+            }
+        } else {
+            if (frontOrSideView(chatId)) {
+                if (checkAndSetNationalityPromptAfterView(chatId)) {
+                    sendMessage(chatId, "Pick the type of body you want", KeyboardSetter.bodyMenu());
+                }
+            } else {
+                if (checkAndSetBodyPromptAfterView(chatId)){
+                    sendMessage(chatId, "What color should the hair be?", KeyboardSetter.hairMenu());
+                }
+            }
+        }
+
+        if (!AnimeStyle(chatId)) {
+            if (frontOrSideView(chatId)) {
+                if (checkAndSetBodyPromptAfterNationality(chatId)) {
+                    sendMessage(chatId, "Let's choose the breast size then.", KeyboardSetter.boobsMenu());
+                }
+            } else {
+                if (checkAndSetHairPromptAfterBody(chatId)) {
+                    sendFinalPhoto(chatId);
+                }
+            }
+        }
+
+        if (!AnimeStyle(chatId)) {
+            if (frontOrSideView(chatId)) {
+                if (checkAndSetBreastPrompt(chatId)) {
+                    sendMessage(chatId, "What color should the hair be?", KeyboardSetter.hairMenu());
+                }
+            }
+        }
+
+        if (!AnimeStyle(chatId)) {
+            if (frontOrSideView(chatId)) {
+                if (checkAndSetHairPromptAfterBreast(chatId)) {
+                    sendFinalPhoto(chatId);
+                }
+            }
+        }
+    }
+
+    private void sendFinalPhoto(Long chatId) {
+        try {
+            try {
+                sendMessage(chatId, "Here is your image:", KeyboardSetter.startMenu());
+                execute(photoSaverService.sendImage(chatId,
+                        promptRepository.findByChatId(chatId).getView() + " , " + promptRepository.findByChatId(chatId).getPrompt(),
+                        promptRepository.findByChatId(chatId).getModelId()));
+            } catch (TelegramApiException e) {
+                log.error("Error occurred: " + e.getMessage());
+            }
+        } catch (IOException e) {
+            log.error("Error occurred: " + e.getMessage());
+        }
     }
 
     private boolean checkAndSetStyle(Long chatId) {
         if (checkIfUpdateContains(0, chatId, "/photo")) {
             if (checkIfUpdateContains(1, chatId, "Anime style")) {
-                modelId = "dark-sushi-mix-v2-25";
+                //modelId = "dark-sushi-mix-v2-25";
+                modelIdUpdate(chatId, "dark-sushi-mix-v2-25");
+
                 return true;
             } else if (checkIfUpdateContains(1, chatId, "Realistic style")) {
-                modelId = "realistic-vision-v5-1";
+                //modelId = "realistic-vision-v5-1";
+                modelIdUpdate(chatId, "realistic-vision-v5-1");
                 return true;
             } else {
                 startAllOver(chatId);
@@ -157,8 +242,8 @@ public final class TelegramBot extends TelegramLongPollingBot {
     private boolean checkAndSetAgePrompt(Long chatId) {
         if (checkIfUpdateContains(0, chatId, "style")) {
             if (checkIfUpdateContains(1, chatId, "yo")) {
-                prompt = "fully naked girl, real, masterpiece, best quality, " +
-                        "(detail skin texture, ultra-detailed body)" + getUpdateOnPosition(1, chatId);
+                //prompt = getUpdateOnPosition(1, chatId);
+                promptUpdate(chatId, getUpdateOnPosition(1, chatId));
                 return true;
             } else {
                 startAllOver(chatId);
@@ -167,12 +252,66 @@ public final class TelegramBot extends TelegramLongPollingBot {
         return false;
     }
 
-    private boolean checkAndSetBodyPrompt(Long chatId) {
+    private boolean checkAndSetNationalityPromptAfterView(Long chatId){
+        if (checkIfUpdateContains(0, chatId, "view")) {
+            if (checkIfUpdateContains(1, chatId, "an")
+                    || checkIfUpdateContains(1, chatId, "Latina")
+                    || checkIfUpdateContains(1, chatId, "Black")
+                    || checkIfUpdateContains(1, chatId, "Slavic")) {
+                promptUpdate(chatId, getUpdateOnPosition(1, chatId) + " appearance");
+                return true;
+            } else {
+                startAllOver(chatId);
+            }
+        }
+        return false;
+    }
+
+    private boolean checkAndSetViewPrompt(Long chatId){
+        if (checkIfUpdateContains(0, chatId, "style")) {
+            if (checkIfUpdateContains(1, chatId, "view")) {
+                viewUpdate(chatId, getUpdateOnPosition(1, chatId) + " ");
+                return true;
+            } else {
+                startAllOver(chatId);
+            }
+        }
+        return false;
+    }
+
+    private boolean checkAndSetViewPromptAfterAge(Long chatId){
         if (checkIfUpdateContains(0, chatId, "yo")) {
+            if (checkIfUpdateContains(1, chatId, "view")) {
+                viewUpdate(chatId, getUpdateOnPosition(1, chatId) + " ");
+                return true;
+            } else {
+                startAllOver(chatId);
+            }
+        }
+        return false;
+    }
+
+    private boolean checkAndSetBodyPromptAfterNationality(Long chatId) {
+        if (checkIfUpdateContains(0, chatId, "an")
+                || checkIfUpdateContains(0, chatId, "Latina")
+                || checkIfUpdateContains(0, chatId, "Black")
+                || checkIfUpdateContains(0, chatId, "Slavic")) {
             if (checkIfUpdateContains(1, chatId, "body")) {
-                String lastPrompt = prompt;
-                String newPrompt = getUpdateOnPosition(1, chatId);
-                prompt = lastPrompt + newPrompt + " ";
+                promptUpdate(chatId, "fully naked girl, real, masterpiece, best quality, body parts detailed," +
+                      "(detail skin texture, ultra-detailed body)" + getUpdateOnPosition(1, chatId) + " ");
+                return true;
+            } else {
+                startAllOver(chatId);
+            }
+        }
+        return false;
+    }
+
+    private boolean checkAndSetBodyPromptAfterView(Long chatId) {
+        if (checkIfUpdateContains(0, chatId, "view")) {
+            if (checkIfUpdateContains(1, chatId, "body")) {
+                promptUpdate(chatId, "fully naked girl, real, masterpiece, best quality, body parts detailed," +
+                        "(detail skin texture, ultra-detailed body)" + getUpdateOnPosition(1, chatId) + " ");
                 return true;
             } else {
                 startAllOver(chatId);
@@ -184,9 +323,7 @@ public final class TelegramBot extends TelegramLongPollingBot {
     private boolean checkAndSetBreastPrompt(Long chatId) {
         if (checkIfUpdateContains(0, chatId, "body")) {
             if (checkIfUpdateContains(1, chatId, "breast")) {
-            String lastPrompt = prompt;
-            String newPrompt = getUpdateOnPosition(1, chatId);
-            prompt = lastPrompt + newPrompt + " ";
+              promptUpdate(chatId, getUpdateOnPosition(1, chatId) + " ");
             return true;
             } else {
                 startAllOver(chatId);
@@ -195,62 +332,115 @@ public final class TelegramBot extends TelegramLongPollingBot {
         return false;
     }
 
+    private boolean checkAndSetBreastPromptAfterView(Long chatId) {
+        if (checkIfUpdateContains(0, chatId, "view")) {
+            if (checkIfUpdateContains(1, chatId, "breast")) {
+                promptUpdate(chatId, "fully naked girl, real, masterpiece, best quality, body parts detailed," +
+                        "(detail skin texture, ultra-detailed body)" + getUpdateOnPosition(1, chatId) + " ");
+                return true;
+            } else {
+                startAllOver(chatId);
+            }
+        }
+        return false;
+    }
+
+    private boolean checkAndSetHairPromptAfterBody(Long chatId){
+        if (checkIfUpdateContains(0, chatId, "body")) {
+            if (checkIfUpdateContains(1, chatId, "hair")) {
+                promptUpdate(chatId, getUpdateOnPosition(1, chatId) + " ");
+                return true;
+            } else {
+                startAllOver(chatId);
+            }
+        }
+        return false;
+    }
+
+    private boolean checkAndSetHairPromptAfterBreast(Long chatId){
+        if (checkIfUpdateContains(0, chatId, "breast")) {
+            if (checkIfUpdateContains(1, chatId, "hair")) {
+                promptUpdate(chatId, getUpdateOnPosition(1, chatId) + " ");
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void promptUpdate(Long chatId, String promptText) {
+        if (promptRepository.findById(chatId).isEmpty()){
+            Prompt prompt = new Prompt();
+            prompt.setChatId(chatId);
+            prompt.setPrompt(promptText);
+            
+            promptRepository.save(prompt);
+        } else {
+            Prompt prompt = promptRepository.findByChatId(chatId);
+            var lastPrompt = prompt.getPrompt();
+            prompt.setPrompt(lastPrompt + " , " + promptText);
+            
+            promptRepository.save(prompt);
+        }
+    }
+    
+    private void modelIdUpdate(Long chatId, String modelId) {
+        if (promptRepository.findById(chatId).isEmpty()) {
+            Prompt prompt = new Prompt();
+            prompt.setChatId(chatId);
+            prompt.setModelId(modelId);
+
+            promptRepository.save(prompt);
+        } else {
+            Prompt prompt = promptRepository.findByChatId(chatId);
+            prompt.setChatId(chatId);
+            prompt.setModelId(modelId);
+
+            promptRepository.save(prompt);
+        }
+    }
+
+    private void viewUpdate(Long chatId, String view){
+        if (promptRepository.findById(chatId).isEmpty()) {
+            Prompt prompt = new Prompt();
+            prompt.setChatId(chatId);
+            prompt.setView(view);
+
+            promptRepository.save(prompt);
+        } else {
+            Prompt prompt = promptRepository.findByChatId(chatId);
+            prompt.setChatId(chatId);
+            prompt.setView(view);
+
+            promptRepository.save(prompt);
+        }
+    }
+
+    private void resetPrompt(Long chatId) {
+        Prompt prompt = promptRepository.findByChatId(chatId);
+        if (prompt != null) {
+            prompt.resetAll(chatId);
+            promptRepository.save(prompt);
+        }
+    }
+
     private void startAllOver(Long chatId) {
         sendMessage(chatId, "You should follow along and only pick one of the suggested prompts, try " +
                 "generating one more time starting from the command /photo.", KeyboardSetter.startMenu());
     }
 
+    private boolean AnimeStyle(Long chatId){
+        return promptRepository.findByChatId(chatId)!=null && promptRepository.findByChatId(chatId).getModelId()!=null && promptRepository.findByChatId(chatId).getModelId().equals("dark-sushi-mix-v2-25");
+    }
+
+    private boolean frontOrSideView(Long chatId) {
+        return promptRepository.findByChatId(chatId)!=null && promptRepository.findByChatId(chatId).getView()!=null &&
+              (promptRepository.findByChatId(chatId).getView().contains("Front") ||
+               promptRepository.findByChatId(chatId).getView().contains("Side"));
+    }
+
+
+
     //########################################## PROMPT SECTION ######################################################
-
-
-
-    //########################################## IMAGE SECTION #######################################################
-
-    private void sendImage(long chatId, String prompt, String modelId) throws IOException {
-        ImageGenerator imageGenerator = new ImageGenerator();
-        imageGenerator.setPrompt(prompt);
-        imageGenerator.setModelId(modelId);
-        String imgBase64;
-        try {
-            imgBase64 = getImageOutJson(imageGenerator.sendRequest());
-            byte[] decodedBytes = Base64.getDecoder().decode(imgBase64);
-            saveAsPng(decodedBytes);
-
-            SendPhoto photo = new SendPhoto();
-            InputFile photoFile = new InputFile(new File("output.png"));
-            photo.setPhoto(photoFile);
-            photo.setChatId(chatId);
-
-            try {
-                sendMessage(chatId, "Here is your image:", KeyboardSetter.startMenu());
-                execute(photo);
-            } catch (TelegramApiException e) {
-                log.error("Error occurred: " + e.getMessage());
-            }
-        } catch (IOException e) {
-            log.error("Error occurred: " + e.getMessage());
-        }
-    }
-
-    private static String getImageOutJson(Response response) throws IOException {
-        String base64img;
-        ObjectMapper objectMapper = new ObjectMapper();
-
-        JsonNode rootNode = objectMapper.readTree(response.body().string());
-        base64img = rootNode.get("image").asText();
-
-        return base64img;
-    }
-
-    private static void saveAsPng(byte[] imageBytes) throws IOException {
-        try (FileOutputStream fos = new FileOutputStream("output.png")) {
-            fos.write(imageBytes);
-        }
-    }
-
-    //########################################## IMAGE SECTION #######################################################
-
-
 
     //########################################## UPDATE SECTION ######################################################
 
@@ -279,7 +469,7 @@ public final class TelegramBot extends TelegramLongPollingBot {
     }
 
     private boolean checkIfUpdateContains(int position, Long chatId, String text) {
-        return Objects.requireNonNull(getUpdateOnPosition(position, chatId)).contains(text);
+        return getUpdateOnPosition(position, chatId) != null && getUpdateOnPosition(position, chatId).contains(text);
     }
 
     private String getUpdateOnPosition(int position, Long chatId) {
