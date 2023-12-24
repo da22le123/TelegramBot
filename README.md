@@ -1,5 +1,5 @@
 Hello, this is the Telegram Bot that is currently being developed. 
-Me, Myself and I are still enhancing the functtionality and testing the bot. 
+Me, Myself and I are still enhancing the functionality and testing the bot. 
 It's main purpose is to provide AI-generated images based on the text prompt.
 
 The Tech Stack used in this project:
